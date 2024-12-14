@@ -22,10 +22,6 @@ import os
 import streamlit as st
 import utilidades as util
 
-# Activar entorno: .\.venv\Scripts\activate
-# (env) PS D:\Ejemplo_Streamlit> streamlit run ./Home.py
-# https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
-
 # Configuración Apertura
 util.Config_pag()
 
