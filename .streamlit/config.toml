@@ -1,0 +1,8 @@
+[client]
+showSidebarNavigation = false
+
+[theme]
+base="light"
+primaryColor="#99FFCC"
+secondaryBackgroundColor="#dfe9ef"
+textColor="#00B050"
