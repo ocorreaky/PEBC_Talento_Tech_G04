@@ -49,18 +49,25 @@ def generarMenu():
 
 # Función para redimensionar imágenes manteniendo la proporción
 def resize_image(image_path, max_height_cm):
-    try:
-        dpi = 96
-        max_height_px = int(max_height_cm * dpi / 2.54)
-        img = Image.open(image_path)
-        aspect_ratio = img.width / img.height
-        new_height = max_height_px
-        new_width = int(aspect_ratio * new_height)
-        return img.resize((new_width, new_height))
-    except FileNotFoundError:
-        print(f"Archivo no encontrado: {image_path}")
-        return None
-
+    # Obtén la ruta absoluta del directorio actual
+    base_dir = os.path.dirname(__file__)
+    
+    # Construye la ruta completa al archivo
+    full_path = os.path.join(base_dir, image_path)
+    
+    # Verifica si la ruta existe
+    if not os.path.exists(full_path):
+        raise FileNotFoundError(f"Archivo no encontrado: {full_path}")
+    
+    # Abre y redimensiona la imagen
+    dpi = 96  # Suposición de DPI
+    max_height_px = int(max_height_cm * dpi / 2.54)
+    img = Image.open(full_path)
+    aspect_ratio = img.width / img.height
+    new_height = max_height_px
+    new_width = int(aspect_ratio * new_height)
+    return img.resize((new_width, new_height))
+    
 def Logos_y_Titulo(logo1, logo2, logo3):
     # Mostrar los logotipos en una barra horizontal
     col1, _, col3, _, _, col6 = st.columns([1, 1, 1, 1, 1, 1])  # seis columnas para alinear
