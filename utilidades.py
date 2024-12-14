@@ -49,8 +49,10 @@ def generarMenu():
 
 # Función para redimensionar imágenes manteniendo la proporción
 def resize_image(image_path, max_height_cm):
-    dpi = 96  # Asumimos 96 DPI para conversión de cm a píxeles
-    max_height_px = int(max_height_cm * dpi / 2.54)  # Convertir cm a píxeles
+    # Asegúrate de que la ruta sea relativa al directorio raíz del proyecto
+    image_path = os.path.join(os.path.dirname(__file__), image_path)
+    dpi = 96  # Suposición de DPI
+    max_height_px = int(max_height_cm * dpi / 2.54)
     img = Image.open(image_path)
     aspect_ratio = img.width / img.height
     new_height = max_height_px
