@@ -1,0 +1,13 @@
+,Variable,Unidad,Tipo,Fuente,Código,Fecha_ini,Fecha_fin,Num_datos
+1,Oceanic Niño Index,adim,float64,NOAA,X1,2014-01-01,2024-06-30,127
+2,Volumenes embalses,GWh,float64,Sinergox,X2,2014-01-01,2024-06-30,3834
+3,Generación con fósiles,GWh,float64,Sinergox,X3,2014-01-01,2024-06-30,3834
+4,Generación hidráulica,GWh,float64,Sinergox,X4,2014-01-01,2024-06-30,3834
+5,Generación con Biomasa,GWh,float64,Sinergox,X5,2014-01-01,2024-06-30,3834
+6,Generación Eolica y solar,GWh,float64,Sinergox,X6,2014-01-01,2024-06-30,3834
+7,Precio Gas Natural,USD/MMBtu,float64,Sinergox,X7,2014-01-01,2024-06-30,2768
+8,Confiabilidad OEF,GWh/dia,float64,Sinergox,X8,2014-01-01,2024-06-30,3834
+9,TRM,COP/USD,float64,SFC-Datos Abiertos,X9,2014-01-01,2024-11-25,3926
+10,Confiabilidad RRID,USD,float64,Sinergox,X10,2014-01-01,2024-06-30,3834
+11,Interacción Ecuador,Gwh,float64,Sinergox,X11,2014-01-01,2024-06-30,3828
+12,Precio Energia,COP/kWh,float64,Sinergox,y,2014-01-01,2024-06-30,3834
